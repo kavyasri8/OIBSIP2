@@ -1,0 +1,159 @@
+body{
+    font-family: imperial;
+    background-color: rgba(54, 54, 127, 0.33);
+}
+#tab{
+    /*background-color: rgba(54, 54, 127, 0.33);*/
+    color: black;
+    width: 100%;
+    font-size: 20px;;
+}
+#row{
+    text-align:"center";
+    font-size:larger;
+}
+
+#heads{
+    font-size: 45px;
+}
+#sec{
+    /*background-color: violet;*/
+    background-color: rgba(54, 54, 127, 0.33);
+}
+#me{
+    font-size:25px;
+}
+#me2{
+    font-size:35px;
+}
+#tab2{
+    margin: 100px;
+    text-align: center;
+}
+h1#id1{
+    text-align: center;
+} 
+#button{
+    left:10px;
+    /*background-color: violet;*/
+    background-color: rgba(54, 54, 127, 0.33);
+    width: 70%;
+    height: 37%;
+    border-radius: 5px;
+    text-align: left;
+    margin-left:13%;
+    font-size: 15px;
+}
+#button2{
+    /*background-color: violet;*/
+    background-color: rgba(54, 54, 127, 0.33);
+    width: 70%;
+    height: 37%;
+    border-radius: 5px;
+    text-align: left;
+    right: 20px;
+    align:right;
+    font-size: 15px;
+    margin-left:13%;
+}
+#button3{
+    width: 25%;
+    height: 25%;
+    border-radius:5px;
+    margin-right:5px;
+    /*background-color: violet;*/
+    background-color: rgba(54, 54, 127, 0.33);
+}
+
+#button3.buttons{
+    margin-left: 10%;
+}
+#b1{
+    border-radius:5px;
+    width: 20%;
+    height: 25%;
+}   
+#b1.b{
+    margin-left: 30%;
+}
+#b2.b2{
+    margin-left: 30%;
+}
+
+#b2{
+    border-radius:5px;
+    width: 20%;
+    height: 25%;
+}
+#tab4{
+    margin: 40px;
+}
+#p4{
+    text-align:right;
+    font-size: 20px;
+}
+#p5{
+    font-size: 20px;
+}
+#me3{
+    font-size: 45px;
+}
+img{
+    border-radius: 50%;
+    width: 40%;
+    height: 15%;
+}
+a:visited{
+    color:blue;
+}
+.block-effect {
+/* font-size: calc(8px + 6vw);*/
+    font-size:45px;
+}
+
+.block-reveal {
+    --t: calc(var(--td) + var(--d));
+    color: transparent;
+    padding: 4px;
+    position: relative;
+    overflow: hidden;
+    animation: revealBlock 0s var(--t) forwards;
+}
+.block-reveal::after {
+    content: '';
+    width: 0%;
+    height: 40%;
+    padding-bottom: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--bc);
+    animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;
+}
+  /* animations */
+@keyframes revealBlock {
+    100% {
+    color: #0f0f0f;
+    }
+}
+
+@keyframes revealingIn {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+@keyframes revealingOut {
+    0% {
+    transform: translateX(0);
+    }
+
+    100% {
+    transform: translateX(100%);
+    }
+
+}
+

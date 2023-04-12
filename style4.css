@@ -1,0 +1,44 @@
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn {
+  width: 200px;
+  height: 65px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid rgba(77, 71, 71, 0.271);
+  border-radius:8px;
+  outline: none;
+  transition: 0.1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: black;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: rgba(54, 54, 127, 0.5);
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: black;
+  font-size: 18px;
+  font-weight: 100;
+}
+
